@@ -5,7 +5,10 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
+  outDir:'./dist',
   integrations: [tailwind(), vue()],
   output: 'hybrid',
-  adapter: cloudflare()
+  adapter: cloudflare({
+    mode: "directory"
+  })
 });
