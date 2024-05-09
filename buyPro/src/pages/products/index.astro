@@ -1,13 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Products from "../../components/products.vue";
+import Layout from "../../layouts/Layout.astro";
 ---
 
-<Layout title="Home">
-	<main>
-		Home
-	</main>
+<Layout title="Products">
+    <div class="text-white">
+        <Products />
+    </div>
 </Layout>
-
 <style>
 	main {
 		margin: auto;
